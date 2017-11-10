@@ -16,7 +16,7 @@ before the set deadline (should be in your email).  Please email me at colinfwal
 if you have any questions.
 
 Specificiations:
-- Implement a tableView to display all the handles in the given object array.  There should be
+- Implement a tableView to display all the titles in the given object array.  There should be
     a cell for each item.
     
 - When you tap a tableView cell, if the object in the array at the specified index has a URL,
