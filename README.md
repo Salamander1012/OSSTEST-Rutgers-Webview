@@ -11,7 +11,7 @@ the basic functionality of the "api request" remains intact.**
 
 Clone this repo and change the developer team to yourself so that you can build the project.
 
-'''git clone git@github.com:colinfwalsh/interviewTest.git'''
+`git clone git@github.com:colinfwalsh/interviewTest.git`
 
 Once you confirm everything is working, read through the specifications and submit your project
 before the set deadline (should be in your email).  Please email me at colinfwalsh@gmail.com
