@@ -7,13 +7,20 @@
 //
 
 import UIKit
+import Foundation
 
-class WebViewController: UIViewController {
 
+class WebViewController: UIViewController, UIWebViewDelegate {
+    
+    @IBOutlet weak var webView: UIWebView!
+    
+    var url: URL?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+      
+        webView.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {
