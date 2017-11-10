@@ -9,7 +9,10 @@
 import Foundation
 
 struct MockAPI {
-    static func getData() -> [Any] {
+    
+    static let sharedInstance = MockAPI()
+    
+    var data: [Any] {
         let path = Bundle.main.path(forResource: "ordered_content",
                                     ofType: "json")
         
@@ -27,4 +30,7 @@ struct MockAPI {
                 .jsonObject(with: jsonData as Data,
                             options: []) as! Array<Any>
     }
+    
+    var dataCount: Int {return data.count}
+        
 }

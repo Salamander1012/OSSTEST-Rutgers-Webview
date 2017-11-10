@@ -10,12 +10,13 @@ import UIKit
 import Foundation
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(MockAPI.getData())
+    
+        print(MockAPI.sharedInstance.data)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +25,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MockAPI.getData().count
+        return  MockAPI.sharedInstance.dataCount
     }
     
    
