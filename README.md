@@ -16,24 +16,30 @@ before the set deadline (should be in your email).  Please email me at colinfwal
 if you have any questions.
 
 Specificiations:
-    - Implement a tableView to display all the handles in the given object array.  There should be
+- Implement a tableView to display all the handles in the given object array.  There should be
     a cell for each item.
+    
     - When you tap a tableView cell, if the object in the array at the specified index has a URL,
     a webview should pop up that takes you to the URL listed (If the url doesn't work,
     that's fine so long as the view is a webview).  The objects made this easy for you since they
     have a "view" tag that specifies if the view is www or something else.
+    
     - If "view" is anything else, go to a view that displays the handle, text in the icon field, and
     anything else you wish.
+    
     - Make sure you properly implement a navigationController
+    
     - Add a title to the navigationController
 
 Limitations:
-    - You may use any 3rd party libraries you see fit, but make sure they have relevance to
+- You may use any 3rd party libraries you see fit, but make sure they have relevance to
         the task at hand.
-    - You may google how to implement UIKit instances, or how to do specific things, but make
+        
+- You may google how to implement UIKit instances, or how to do specific things, but make
         sure the code you write is yours and yours alone.  We will check to see if you copy and
         pasted from other sources.
-    - DO NOT work with others on this project.  You need to figure out this problem yourself.
+        
+- DO NOT work with others on this project.  You need to figure out this problem yourself.
     
 
 [Example of the app functionality](https://www.dropbox.com/s/cjj6wtx4eahhs6i/interViewTest.gif)
