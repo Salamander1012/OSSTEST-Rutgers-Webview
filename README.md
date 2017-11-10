@@ -4,14 +4,16 @@
 This project is meant to test your abilities as a potential iOS developer at Rutgers OSS.
 
 A simple app has been made that includes a ViewController (which can be renamed or
-removed), WebViewController, and a DetailViewController, a MockAPI struct that has a static
-method to fetch data from an imaginary API, and an initialized storyboard for your use.
+removed), WebViewController, DetailViewController, a MockAPI struct that has a static
+instance of itself (singleton) to fetch data from an imaginary API, and an initialized storyboard for your use.
 **You can freely modify any of the files so long as
 the basic functionality of the "api request" remains intact.**
 
 Clone this repo and change the developer team to yourself so that you can build the project.
-Make sure you are able to see the first view with a text label that says "Remove this".  Once
-you confirm everything is working, read through the specifications and submit your project
+
+'''git clone git@github.com:colinfwalsh/interviewTest.git'''
+
+Once you confirm everything is working, read through the specifications and submit your project
 before the set deadline (should be in your email).  Please email me at colinfwalsh@gmail.com
 if you have any questions.
 
