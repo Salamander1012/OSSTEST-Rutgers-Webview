@@ -19,17 +19,17 @@ Specificiations:
 - Implement a tableView to display all the handles in the given object array.  There should be
     a cell for each item.
     
-    - When you tap a tableView cell, if the object in the array at the specified index has a URL,
+- When you tap a tableView cell, if the object in the array at the specified index has a URL,
     a webview should pop up that takes you to the URL listed (If the url doesn't work,
     that's fine so long as the view is a webview).  The objects made this easy for you since they
     have a "view" tag that specifies if the view is www or something else.
-    
-    - If "view" is anything else, go to a view that displays the handle, text in the icon field, and
+
+- If "view" is anything else, go to a view that displays the handle, text in the icon field, and
     anything else you wish.
-    
-    - Make sure you properly implement a navigationController
-    
-    - Add a title to the navigationController
+
+- Make sure you properly implement a navigationController
+
+- Add a title to the navigationController
 
 Limitations:
 - You may use any 3rd party libraries you see fit, but make sure they have relevance to
