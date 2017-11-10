@@ -35,6 +35,7 @@ Limitations:
         pasted from other sources.
     - DO NOT work with others on this project.  You need to figure out this problem yourself.
     
-    [Example of the final app](https://www.dropbox.com/s/cjj6wtx4eahhs6i/interViewTest.gif)
-    
-    Note: This is the bare minimum - make your app more interesting than this.
+
+[Example of the app functionality](https://www.dropbox.com/s/cjj6wtx4eahhs6i/interViewTest.gif)
+
+Note: This is the bare minimum - make your app more interesting than this.
