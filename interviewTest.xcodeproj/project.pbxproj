@@ -16,6 +16,7 @@
 		BDB738271FB61F6A00262B0B /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB738261FB61F6A00262B0B /* MockAPI.swift */; };
 		BDB738291FB6293F00262B0B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB738281FB6293F00262B0B /* WebViewController.swift */; };
 		BDB7382B1FB6294E00262B0B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7382A1FB6294E00262B0B /* DetailViewController.swift */; };
+		C9618B8A1FB696740054BE68 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9618B891FB696740054BE68 /* MenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BDB738261FB61F6A00262B0B /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		BDB738281FB6293F00262B0B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BDB7382A1FB6294E00262B0B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C9618B891FB696740054BE68 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				BDB738261FB61F6A00262B0B /* MockAPI.swift */,
 				BDB738131FB61C6400262B0B /* ViewController.swift */,
 				BDB738151FB61C6400262B0B /* Main.storyboard */,
+				C9618B891FB696740054BE68 /* MenuTableViewCell.swift */,
 				BDB738281FB6293F00262B0B /* WebViewController.swift */,
 				BDB7382A1FB6294E00262B0B /* DetailViewController.swift */,
 				BDB738181FB61C6400262B0B /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 			files = (
 				BDB738141FB61C6400262B0B /* ViewController.swift in Sources */,
 				BDB738271FB61F6A00262B0B /* MockAPI.swift in Sources */,
+				C9618B8A1FB696740054BE68 /* MenuTableViewCell.swift in Sources */,
 				BDB7382B1FB6294E00262B0B /* DetailViewController.swift in Sources */,
 				BDB738121FB61C6400262B0B /* AppDelegate.swift in Sources */,
 				BDB738291FB6293F00262B0B /* WebViewController.swift in Sources */,

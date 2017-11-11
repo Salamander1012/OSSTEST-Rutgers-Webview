@@ -16,7 +16,8 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        textLabel.text = MenuListItems[currentIndex].title
     }
 
     override func didReceiveMemoryWarning() {

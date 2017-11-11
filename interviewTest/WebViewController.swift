@@ -20,13 +20,18 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
       
         webView.delegate = self
+        print("webview loaded")
+        url = URL(string: MenuListItems[currentIndex].url)
         
+        let request = URLRequest(url: url!)
+        webView.loadRequest(request)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*
