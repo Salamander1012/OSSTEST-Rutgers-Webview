@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return  MockAPI.sharedInstance.dataCount
-        //return testitems.count
+       
     }
     
    
@@ -70,8 +70,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         MenuListItems.append(item)
         
         cell.setUpCell(item: item)
-        cell.selectedBackgroundView?.backgroundColor = .none
-        
         return cell
     }
     
