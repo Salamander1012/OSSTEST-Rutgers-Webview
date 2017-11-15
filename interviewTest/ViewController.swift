@@ -30,8 +30,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         
         navigationItem.title = "Menu"
+        parseData()
         
-        print(MockAPI.sharedInstance.data)
     }
     
     
@@ -42,35 +42,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return  MockAPI.sharedInstance.dataCount
+        return  MenuListItems.count
        
     }
-    
    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell") as! MenuTableViewCell
         
-        var title = ""
-        var view = ""
-        var url = ""
-        
-        if let titleOp = (MockAPI.sharedInstance.data[indexPath.row]as!NSDictionary)["title"] {
-            title = titleOp as! String
-        }
-        if let viewOp = (MockAPI.sharedInstance.data[indexPath.row]as!NSDictionary)["view"] {
-            view = viewOp as! String
-        }
-        if view == "www" {
-            if let urlOp = (MockAPI.sharedInstance.data[indexPath.row]as!NSDictionary)["url"] {
-                url = urlOp as! String
-            }
-        }
-        
-        let item = MenuListItem(title: title, view: view, url: url)
-        MenuListItems.append(item)
-        
-        cell.setUpCell(item: item)
+        cell.setUpCell(item: MenuListItems[indexPath.row])
         return cell
     }
     
@@ -84,5 +64,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
 
+}
+
+//API Call and parsing data
+extension ViewController {
+    
+    func parseData() {
+        let data = MockAPI.sharedInstance.data as! [NSDictionary]
+        for menuItem in data {
+            var title = ""
+            var view = ""
+            var url = ""
+            
+            if let titleOp = menuItem.value(forKey: "title") {
+                title = titleOp as! String
+            }
+            if let viewOp = menuItem.value(forKey: "view") {
+                view = viewOp as! String
+            }
+            if view == "www" {
+                if let urlOp = menuItem.value(forKey: "url") {
+                    url = urlOp as! String
+                }
+            }
+            let item = MenuListItem(title: title, view: view, url: url)
+            MenuListItems.append(item)
+            print(menuItem.value(forKey: "title"))
+        }
+        self.tableView.reloadData()
+    }
 }
 
